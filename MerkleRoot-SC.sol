@@ -37,7 +37,7 @@ pragma solidity >=0.8.0 <0.9.0;
 
 
 contract MerkleTest {
-    // Our rootHash
+    // Our rootHash & make sure to add "0x" in the beginning of the hash if it not contains. 
     bytes32 public root = 0xeeefd63003e0e702cb41cd0043015a6e26ddb38073cc6ffeb0ba3e808ba8c097;
 
     function checkValidity(bytes32[] calldata _merkleProof) public view returns (bool){
